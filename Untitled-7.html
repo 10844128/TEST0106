@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳情</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="Untitled-7.css">
+</head>
+
+<body>
+  <!-- Navbar (Sits on top) -->
+  <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="Untitled-1.html" class="w3-bar-item w3-button"><b>PT</b> Paper tape </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+     
+      <a href="Untitled-2.html" class="w3-bar-item w3-button">會員</a>
+      <a href="Untitled-8.html" class="w3-bar-item w3-button">購物車</a>
+      <a href="Untitled-4.html" class="w3-bar-item w3-button">商品</a>
+      <a href="Untitled-3.html" class="w3-bar-item w3-button">Q & A</a>
+      <a href="Untitled-1.html" class="w3-bar-item w3-button">首頁</a>
+    </div>
+  </div>
+  
+  </div>
+  <!--主體界面-->
+  <div class="pro-body">
+    <div style="display: flex;">
+      <div>
+        <img src="pic/16.JPG" class="pro-img">
+      </div>
+      <div class="pro-p-dir">
+        <div class="pro-name">橘</div>
+        <div class="pro-price">$200</div>
+        <div>
+          <button class="w3-button w3-black">加入購物車</button>
+          <button class="w3-button w3-black"><a href="Untitled-9.html" >直接購買</a> <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="product-root">
+      <div class="product-botton">
+        <nav>
+          <a href="#" onclick="clickhere(this)" value="product">商品詳情</a>
+          <a href="#" onclick="clickhere(this)" value="stars">商品留言</a>
+          <a href="#" onclick="clickhere(this)" value="buyer">歷史留言</a>
+        </nav>
+      </div>
+      <div class="r-p">
+        <div id="product" class="r-p-item-1">
+          <div>產品介紹</div>
+          <div>
+            <img src="pic/12.JPG" class="p-p-img">
+          </div>
+        </div>
+        <div id="opinion" class="r-p-item">
+          <div>買家評價</div>
+          <img src="pic/01.jpg">
+        </div>
+        <div id="stars" class="r-p-item">
+          <div id="projects" class="w3-container w3-padding-32">
+            
+            
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">留個言吧</h2>
+            <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+                <form method="POST" action="login_php.php">
+                 
+                  輸入姓氏：<br><input type="text" name="password" style="margin: 0.5%;" /><br>
+                  
+                  留言內容：<br> <textarea type="text" style="margin: 0.5%;" name="username" rows="6" cols="35"></textarea>
+
+                </form>
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <div class="w3-container">
+                  
+                
+                  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">送出留言</button>
+                
+                  <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                  
+                      <div class="w3-center"><br>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                        <img src="pic/00/06.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                      </div>
+                
+                      <form class="w3-container" action="/action_page.php">
+                        <div class="w3-section">
+                          <center> <label style="60px"><b>留言成功</b></label></center>
+                          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">
+                            <a href="Untitled-1.html" class="w3-bar-item w3-button">返回首頁</a>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </h4>
+          </div>
+            </div>
+          </div>
+    
+          
+        </div>
+        <div id="buyer" class="r-p-item">
+          <!-- Blog entry -->
+          <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+              
+            <div style="padding:2%;">
+              <h5>提問時間, <span class="w3-opacity">June 25, 2020</span></h5>
+            <div class="w3-justify"  style="margin-left:30%;margin-right: 30%;">
+              <p>提問者:<strong>林先生</strong> </p>
+              <p><strong>Paper tape你好!</strong>
+                我之前在網路上看到你們這家公司，也非常喜歡你們家的產品，但是因為手機網路的問題，不小心重複下單了，請問如果遇到這樣子的問題應該怎麼處理，
+                順便想請問一下你們家有宅配到府的服務嗎，？如果可以我想批發大量的貨不知道方不方便幫我宅配到，如果小編有看到的話麻煩盡快回復我!謝謝</p>
+            </div></div>
+            <div style="padding:2%;">
+              <h5>提問時間, <span class="w3-opacity">June 25, 2020</span></h5>
+            <div class="w3-justify"  style="margin-left:30%;margin-right: 30%;">
+              <p>提問者:<strong>林先生</strong> </p>
+              <p><strong>Paper tape你好!</strong>
+                我之前在網路上看到你們這家公司，也非常喜歡你們家的產品，但是因為手機網路的問題，不小心重複下單了，請問如果遇到這樣子的問題應該怎麼處理，
+                順便想請問一下你們家有宅配到府的服務嗎，？如果可以我想批發大量的貨不知道方不方便幫我宅配到，如果小編有看到的話麻煩盡快回復我!謝謝</p>
+            </div></div>
+            <div style="padding:2%;">
+              <h5>提問時間, <span class="w3-opacity">June 25, 2020</span></h5>
+            <div class="w3-justify"  style="margin-left:30%;margin-right: 30%;">
+              <p>提問者:<strong>林先生</strong> </p>
+              <p><strong>Paper tape你好!</strong>
+                我之前在網路上看到你們這家公司，也非常喜歡你們家的產品，但是因為手機網路的問題，不小心重複下單了，請問如果遇到這樣子的問題應該怎麼處理，
+                順便想請問一下你們家有宅配到府的服務嗎，？如果可以我想批發大量的貨不知道方不方便幫我宅配到，如果小編有看到的話麻煩盡快回復我!謝謝</p>
+            </div></div>
+    
+                  
+         
+
+            
+               
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-panel w3-padding-16">
+    <p>Powered by <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">Copyright ©-2020 css</a></p>
+  </footer>
+
+  <script>
+    var arraypro = ["product", "opinion", "stars", "buyer"]
+
+    function clickhere(x) {
+      // for (i = 0; i < arraypro.length; i++) {
+      //   document.getElementById(arraypro[i]).style.display = "none";
+      // }
+      arraypro.forEach(e => {
+        document.getElementById(e).style.display = "none";
+      });
+
+      var y = x.attributes.value.nodeValue;
+      document.getElementById(y).style.display = "block";
+    }
+  </script>
+</body>
+
+</html>

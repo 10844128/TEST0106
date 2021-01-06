@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.item1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+.imgtxt {
+    width: 40%;
+    padding: -5%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+ 
+  
+</style>
+
+<div class="item1">
+      <div class="imgtxt">
+        <div class="txt">
+            <!-- Member -->
+      <div id="projects" class="w3-container w3-padding-32">
+        <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">結帳</h2>
+        <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+            <form method="POST" action="login_php.php">
+              輸入名稱：<input type="text" name="password" style="margin: 0.5%;" /><br>
+              輸入姓氏：<input type="text" name="password" style="margin: 0.5%;" /><br>
+              電子郵件：<input type="text" name="username" style="margin: 0.5%;" /><br>
+              宅配地址：<input type="text" name="password" style="margin: 0.5%;" /><br>
+              備註事項：<br> <textarea type="text" style="margin: 0.5%;" name="username" rows="6" cols="35"></textarea>
+            </form>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <div class="w3-container">
+              
+            
+              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">送出訂單</button>
+            
+              <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+              
+                  <div class="w3-center"><br>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                    <img src="pic/00/08.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                  </div>
+            
+                  <form class="w3-container" action="/action_page.php">
+                    <div class="w3-section">
+                      <center> <label style="60px"><b>購買成功</b></label></center>
+                      <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">
+                        <a href="Untitled-1.html" class="w3-bar-item w3-button">返回首頁</a>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </h4>
+      </div>
+        </div>
+      </div>
+
+      <div class="imgtxt">
+        <div class="txt">
+          <img class="slides" src="pic/08.jpg"" width=" 100%">
+
+        </div>
+      </div>
+    </div>
+
+</html>
